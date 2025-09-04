@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday Puggu ❤️</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+      font-family: 'Trebuchet MS', sans-serif;
+      text-align: center;
+      color: #fff;
+      overflow: hidden;
+    }
+    .page {
+      display: none;
+      font-size: 1.8rem;
+      padding: 20px;
+      animation: fadeIn 1.5s ease;
+    }
+    .active {
+      display: block;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 25px;
+      font-size: 1rem;
+      background: #ff4081;
+      border: none;
+      border-radius: 25px;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #f50057;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    .emoji {
+      font-size: 2.5rem;
+      display: block;
+      margin-top: 15px;
+      animation: floatUp 2s infinite ease-in-out;
+    }
+    @keyframes floatUp {
+      0% { transform: translateY(20px); }
+      50% { transform: translateY(-20px); }
+      100% { transform: translateY(20px); }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Background music -->
+<iframe width="0" height="0"
+src="https://www.youtube.com/embed/rOUuGvJkBrQ?autoplay=1&loop=1&playlist=rOUuGvJkBrQ"
+frameborder="0" allow="autoplay"></iframe>
+
+<div id="pages">
+  <div class="page active">শুভ জন্মদিন আমার Puggu 🥺❤️</div>
+  <div class="page">Tomar ai jonmodin khub khub sundor vabe katuk . Onek onek sustho thako sukhe thako valo thako . R amar sathe thako go 🫣.</div>
+  <div class="page">Tumi amar kache khub jotner manus go . Tomake ami khub khub valobashi . Tumi sob somoy avabei amar pase theke pugguuuu 🥹🧿</div>
+  <div class="page">
+    <p>Pugguuuu ❤️</p>
+    <p>Puchkuuuu 💕</p>
+    <p>Sonpapriiiii 🌸</p>
+    <p>Bouuuuu 💍</p>
+    <p>Bacchaaa 🍼</p>
+    <p>Puchuu 🐻</p>
+    <p>Sonaa 🌟</p>
+    <p>Mrs. Maitra 👩‍❤️‍👨</p>
+  </div>
+  <div class="page">Tomar jibonerr sob eaccheee puronnn hokkk... taiiii na pugguuuu 🥹?</div>
+  <div class="page">Tumi saradin ph gatte valo basho 📱 Fb , insta , wp sudhu aisob I korooo... Tomar suvo k valoi baso na tai na pugguuu 🥹?</div>
+  <div class="page">Tumiii amar jibon kothain somoy er songhiii... kokhonoi amar hat ta cherooo naaa babuuuu 😭😭</div>
+  <div class="page">Tomar wish jeno avabei puron hoi... ar ami tomar paseee takteee pariiiii 😁❤️</div>
+  <div class="page">Tumii onekkkkkkkk strong achooo 💪 Arooo strong hoteee hobeeeeeee ❤️ Ami sob somoy tomar pase ☺️💯</div>
+  <div class="page">Akhaneiii seshhhh noiiii 😏</div>
+  <div class="page">Aroo acheee daraoooo 😉</div>
+  <div class="page">Oiiiii kiii go aro ache bollam jeee 🤭</div>
+  <div class="page">Ache achee akhono acheee darooooo 🙈</div>
+  <div class="page">Sortiiii acheee go 😜</div>
+  <div class="page">Ar ektuuuuuu 😅</div>
+  <div class="page">Ai to abar dekhbeeee 🤩</div>
+  <div class="page">Pugguuuu dekhbeee to abarrrr 😍</div>
+  <div class="page">Neo abar dekho 🥳</div>
+  <div class="page">Porer ta tei ache 🤗</div>
+  <div class="page">I loveeee youuuuuu Myyyyyyy everything ☺️🩷 <br><br>- Tomar Suvooo</div>
+</div>
+
+<button id="nextBtn">Next ➡️</button>
+
+<script>
+  const pages = document.querySelectorAll(".page");
+  const nextBtn = document.getElementById("nextBtn");
+  let current = 0;
+
+  nextBtn.addEventListener("click", () => {
+    pages[current].classList.remove("active");
+    current = (current + 1) % pages.length;
+    pages[current].classList.add("active");
+  });
+</script>
+
+</body>
+</html>
